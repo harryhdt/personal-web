@@ -14,7 +14,7 @@
 				>harryhdt.dev</a
 			>
 		</div>
-		<div class="menu flex items-center gap-12">
+		<div class="menu flex items-center gap-6 sm:gap-12">
 			<MenuLink href="/">Home</MenuLink>
 			<MenuLink href="/about">About</MenuLink>
 			<button class="hover:bg-zinc-200 dark:hover:bg-zinc-700 p-1" on:click={toggleColorMode}>

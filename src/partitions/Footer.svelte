@@ -6,6 +6,7 @@
 	<div class="max-w-7xl text-center py-4 mx-auto px-4">
 		Copyright&copy;
 		{new Date().getFullYear()}
+		<br />
 		<a
 			href="/"
 			class="font-medium text-green-700 hover:text-green-800 dark:text-green-600 dark:hover:text-green-700"
