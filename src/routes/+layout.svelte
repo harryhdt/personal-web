@@ -4,11 +4,17 @@
 	import Header from '$src/partitions/Header.svelte';
 	import Footer from '$src/partitions/Footer.svelte';
 	import { initColorMode } from '$src/store/app';
+	import { browser } from '$app/environment';
 	//
-	initColorMode();
+	let pageReady = false;
+	if (browser) {
+		initColorMode();
+		pageReady = true;
+	}
 </script>
 
 <div
+	style="opacity: {pageReady ? 1 : 0};"
 	id="app"
 	class="font-fira-mono bg-zinc-100 text-zinc-700 dark:text-zinc-400 dark:bg-zinc-900 min-h-screen absolute inset-0 flex flex-col"
 >
