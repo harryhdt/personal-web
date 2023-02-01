@@ -10,7 +10,7 @@
 
 <div
 	id="app"
-	class="font-fira-mono bg-zinc-100 text-zinc-800 dark:text-zinc-400 dark:bg-zinc-900 min-h-screen absolute inset-0 flex flex-col"
+	class="font-fira-mono bg-zinc-100 text-zinc-700 dark:text-zinc-400 dark:bg-zinc-900 min-h-screen absolute inset-0 flex flex-col"
 >
 	<Header />
 	<main class="mx-auto px-4 max-w-7xl h-full overflow-auto w-full">
