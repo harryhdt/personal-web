@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+
+		<!-- Init colorMode -->
+		<style>
+			html {
+				user-select: none;
+			}
+			#loading-app {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+			#loading-spinner {
+				width: 24px;
+				height: 24px;
+				animation: spin 1s linear infinite;
+				border-width: 2px;
+				border-style: solid;
+				border-radius: 100px;
+				border-color: rgb(245 158 11);
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+			}
+
+			@media (min-width: 768px) {
+				#loading-spinner {
+					width: 36px;
+					height: 36px;
+				}
+			}
+
+			.bg-body-dark {
+				background-color: rgb(24, 24, 27);
+			}
+			.bg-body-light {
+				background-color: rgb(244, 244, 245);
+			}
+			.bg-body-light #loading-spinner {
+				border-color: rgb(22 163 74);
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+			}
+		</style>
+		<script>
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('bg-body-dark');
+			} else {
+				document.documentElement.classList.add('bg-body-light');
+			}
+		</script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<div id="loading-app">
+				<div id="loading-spinner"></div>
+			</div>
+			%sveltekit.body%
+		</div>
+	</body>
+</html>
