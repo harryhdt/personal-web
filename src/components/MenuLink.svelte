@@ -18,7 +18,7 @@
 	{#if $page.url.pathname === href}
 		<div
 			in:scale={{ duration: 200 }}
-			class="absolute hidden md:block z-10 bottom-0 h-[2px] inset-x-0 bg-gray-300 dark:bg-gray-600 -bottom-1"
+			class="absolute hidden md:block z-10 h-[2px] inset-x-0 bg-gray-300 dark:bg-gray-600 -bottom-1"
 		/>
 	{/if}
 </a>
