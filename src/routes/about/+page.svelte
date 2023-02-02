@@ -5,9 +5,7 @@
 	<title>About | Harry Hidayat</title>
 	<meta
 		name="description"
-		content="I am Harry Hidayat, a Junior Fullstack Software Engineer. I have been programming since 2020.
-			Especially on Web and Mobile Development. Currently (Feb, 2023), I work as Fulltime Software Engineer, mainly code for React, Learn
-			every day, to make me grow and gain more experience."
+		content="I am Harry Hidayat, a Junior Fullstack Software Engineer. I have been programming since 2020. Especially on Web and Mobile Development. Currently (Feb, 2023), I work as Fulltime Software Engineer, totally coding for web, yaa for sure i learn every day, to make me grow and gain more experience."
 	/>
 </svelte:head>
 
@@ -31,8 +29,6 @@
 			- Svelte js<br />
 			- Alpine js<br />
 			- Tailwind css<br />
-			- MySQL<br />
-			- PosgreSQL
 		</p>
 		<p>
 			2. Frontend Web<br />
@@ -50,6 +46,13 @@
 			4. Backend Development <br />
 			- Laravel<br />
 			- Adonis JS
+		</p>
+		<p>
+			5. Database <br />
+			- MySQL <br />
+			- PostgreSQL <br />
+			- SQLite <br />
+			- Some no sql DB
 		</p>
 		<p>
 			5. Cloud <br />
